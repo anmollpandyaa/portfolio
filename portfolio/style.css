@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@300&family=Open+Sans:wght@800&family=Raleway&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: #B0B0B0;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+header {
+    background-color: #343a40;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    animation: slideDown 1s ease-in-out;
+    z-index: 1000; 
+
+}
+
+.left {
+    font-size: 2rem;
+    padding-left: 20px;
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+    margin: 0 20px;
+    justify-content: space-between;
+    justify-content: end;
+    align-items: end;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(195, 191, 213);
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 250px;
+    animation: fadeIn 3s forwards;
+    transition-delay: 1s;
+}
+
+.leftpart {
+    font-size: 2rem;
+    margin-top: 25vmin;
+}
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #343a40;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 15px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.name{
+    color: rgb(230, 230, 230);
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.greet {
+    color: rgb(230, 230, 230);
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.introduction {
+    color: #B0B0B0;
+    font-size: 1.5rem;
+}
+
+.rightpart img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    height: 620px;
+    padding-top: 20px;
+    padding-left: 20%;
+}
+
+p {
+    color: #B0B0B0;
+    font-size: 1.5rem;
+    padding: 20px;
+    max-width: 100%;
+}
+
+/* #about{
+    padding-top: 250px;
+} */
+
+.heading {
+    font-size: 3rem;
+    color: rgb(230, 230, 230);
+    padding: 20px;
+}
+
+.list {
+    color: #B0B0B0;
+    font-size: 1.5rem;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.category {
+    color: #B0B0B0;
+    font-size: 1.5rem;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.skill-category {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #343a40;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skill-category h3 {
+    margin-bottom: 20px;
+    color: rgb(230, 230, 230);
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #B0B0B0; 
+}
+
+.skill-item i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.skill-item span {
+    font-size: 18px;
+}
+
+
+.logo {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.last {
+    padding-bottom: 180px;
+}
+
+.mail {
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+.icon {
+    padding: 20px;
+}
+
+.social {
+    color: lavender;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.handles {
+    display: flex;
+    justify-content: space-around;
+    /* Or space-between, or flex-start, depending on the desired spacing */
+    align-items: center;
+    /* Aligns the items vertically in the center */
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    /* Adjust margin as needed */
+}
+
+.icon i {
+    margin-right: 5px;
+    /* Adjust the space between icon and text */
+}
+
+.social {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+    /* Adjust the space between icon and text */
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.formvalues {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.formsubmit {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-container {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: content-box;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Page Specific Styles */
+#form-container {
+    background: #343a40;
+    padding: 20px;
+    border: 1px solid #343a40;
+    border-radius: 8px;
+    width: 300px;
+    margin-left: 15px;
+    margin-top: 28px;
+    display: flex;
+}
+
+#name-input,
+#email-input,
+#message-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: black;
+    border: 1px solid #343a40;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+}
+
+#message-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid #343a40;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #343a40;
+}
+
+#submit-button:active {
+    background-color: #23272b;
+}
+
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-socials {
+    margin-bottom: 20px;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-socials a:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+.copyright {
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .section1 {
+        flex-direction: row;
+    }
+
+    .section1>div {
+        flex: 1;
+    }
+
+    .rightpart img {
+        padding-top: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .footer-socials a img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Initial state of the headings */
+.heading {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust as needed */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Adjust timing as needed */
+}
+
+/* Fade-in effect when headings are in view */
+.heading.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
